@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="section-main">
+    <div class="container">
+        <div class="wrapper-flex-main">
+            <div class="left-side">
+                <div class="form-wrapper">
+                    <form action="" method="post">
+                        <h1>New travel:</h1>
+                        <div>
+                            <input type="text" name="cityStart" id="cityStart-id" maxlength="100" placeholder="City start" required>
+                        </div>
+                        <div>
+                            <input type="text" name="cityFinish" id="cityFinish-id" maxlength="100" placeholder="City finish" required>
+                        </div>
+                        <div>
+                            <input type="text" name="budget" id="budget-id" maxlength="100" placeholder="Budget">
+                        </div>
+                        <div>
+                            <label for="date-start-id">Date start</label>
+                        </div>
+                        <div>
+                            <input type="date" name="date-start" id="date-start-id">
+                        </div>
+                        <div>
+                            <label for="date-end-id">Date end</label>
+                        </div>
+                        <div>
+                            <input type="date" name="date-end" id="date-end-id">
+                        </div>
+                        <div>
+                            <label for="persons-select">Persons:</label>
+                        </div>
+                        <div>
+                            <select name="persons" id="persons-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value=">7">>7</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="transfer-select">Main transfer type:</label>
+                        </div>
+                        <div>
+                            <select name="transfer" id="transfer-select">
+                                <option value="">---</option>
+                                <option value="Bus">Bus</option>
+                                <option value="Private Car">Private car</option>
+                                <option value="Railway">Railway</option>
+                                <option value="Fly">Fly</option>
+                                <option value="Rent Car">Rent car</option>
+                                <option value="Taxi">Taxi</option>
+                            </select>
+                        </div>
+                        <div class="form-save">
+                            <input type="button" value="Save travel" id="onClick">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-side">
+                <h1>Travel history:</h1>
+                <div class="cards" id="cards">
+                    <div class="card">
+                        <div class="card-left">
+                            <h2>Example trip: From City1 to City2</h2>
+                            <p>Expected budget: 1000 ILS</p>
+                            <p>1.03.2023 - 4.03.2023 | 2 persons | Private car</p>
+                        </div>
+                        <div class="card-right">
+                            <p>
+                                <img src="./images/edit.png" alt="edit">
+                                <img src="./images/cancel.png" alt="delete">
+                                <img src="./images/dots.png" alt="dots">
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
